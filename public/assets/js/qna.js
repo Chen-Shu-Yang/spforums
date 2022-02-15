@@ -5,8 +5,8 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
-const frontEndUrl = 'https://spforum.herokuapp.com';
-const backEndUrl = 'https://spforum-backend.herokuapp.com';
+const frontEndUrl = 'https://spspforum.herokuapp.com';
+const backEndUrl = 'https://spspforum-backend.herokuapp.com';
 
 let postSearchChar = [];
 const postSearch = document.getElementById('qnaSearch');
@@ -463,7 +463,7 @@ $(document).ready(() => {
   // log out
   $('#logout').click(() => {
     window.localStorage.clear();
-    window.location.assign(`${frontEndUrl}/login`);
+    window.location.assign(`${frontEndUrl}`);
   });
 });
 

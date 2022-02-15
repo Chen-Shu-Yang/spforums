@@ -5,8 +5,8 @@
 /* eslint-disable no-console */
 
 // URL
-const frontEndUrl = 'https://spforum.herokuapp.com';
-const backEndUrl = 'https://spforum-backend.herokuapp.com';
+const frontEndUrl = 'https://spspforum.herokuapp.com';
+const backEndUrl = 'https://spspforum-backend.herokuapp.com';
 function loadUserProfilePic() {
   const pic = JSON.parse(localStorage.getItem('userImage'));
   if (pic == null) {
@@ -64,7 +64,7 @@ function createStoryCard(cardInfo) {
           <p style="width: 200%">${cardInfo.description}</p>
       </div>
       <button type="button" class="btn btn-primary" 
-          onclick="window.location.replace('https://spforum.herokuapp.com/updateStory?storyID=${cardInfo.storyID}')">
+          onclick="window.location.replace('https://spspforum.herokuapp.com/updateStory?storyID=${cardInfo.storyID}')">
             <h3>Make Edits</h3>
       </button>
     </div>
@@ -1159,7 +1159,7 @@ $(document).ready(() => {
   // logout button
   $('#logoutBtn').click(() => {
     window.localStorage.clear();
-    window.location.assign(`${frontEndUrl}/homepage`);
+    window.location.assign(`${frontEndUrl}`);
   });
 });
 

@@ -4,8 +4,8 @@
 /* eslint-disable no-undef */
 
 // url
-const frontEndUrl = 'https://spforum.herokuapp.com';
-const backEndUrl = 'https://spforum-backend.herokuapp.com';
+const frontEndUrl = 'https://spspforum.herokuapp.com';
+const backEndUrl = 'https://spspforum-backend.herokuapp.com';
 
 // get item from url
 const userData = localStorage.getItem('userInfo');
@@ -258,7 +258,7 @@ $(document).ready(() => {
   // logout button
   $('#logout').click(() => {
     window.localStorage.clear();
-    window.location.assign(`${frontEndUrl}/homepage`);
+    window.location.assign(`${frontEndUrl}`);
   });
 });
 

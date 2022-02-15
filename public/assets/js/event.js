@@ -12,8 +12,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
 
-const frontEndUrl = 'https://spforum.herokuapp.com';
-const backEndUrl = 'https://spforum-backend.herokuapp.com';
+const frontEndUrl = 'https://spspforum.herokuapp.com';
+const backEndUrl = 'https://spspforum-backend.herokuapp.com';
 
 function createCard(cardInfo) {
   const card = `
@@ -382,7 +382,7 @@ $(document).ready(() => {
   // log out
   $('#logout').click(() => {
     window.localStorage.clear();
-    window.location.assign('https://glacial-bastion-56154.herokuapp.com/login');
+    window.location.assign(frontEndUrl);
   });
 });
 

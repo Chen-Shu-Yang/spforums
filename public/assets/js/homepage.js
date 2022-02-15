@@ -8,8 +8,8 @@
 // const res = require("express/lib/response");
 
 // backend url
-const frontEndUrl = 'https://spforum.herokuapp.com';
-const backEndUrl = 'https://spforum-backend.herokuapp.com';
+const frontEndUrl = 'https://spspforum.herokuapp.com';
+const backEndUrl = 'https://spspforum-backend.herokuapp.com';
 
 // Google OAuth
 
@@ -525,7 +525,7 @@ $(document).ready(() => {
   // logout
   $('#logout').click(() => {
     window.localStorage.clear();
-    window.location.assign(`${frontEndUrl}/login`);
+    window.location.assign(`${frontEndUrl}`);
   });
 });
 

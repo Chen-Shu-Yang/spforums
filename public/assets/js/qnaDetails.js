@@ -8,8 +8,8 @@
 /* eslint-disable no-console */
 
 // backend url
-const frontEndUrl = 'https://spforum.herokuapp.com';
-const backEndUrl = 'https://spforum-backend.herokuapp.com';
+const frontEndUrl = 'https://spspforum.herokuapp.com';
+const backEndUrl = 'https://spspforum-backend.herokuapp.com';
 
 const userData = localStorage.getItem('userInfo');
 const userid = localStorage.getItem('userid');
@@ -577,7 +577,7 @@ $(document).ready(() => {
   // log out
   $('#logout').click(() => {
     window.localStorage.clear();
-    window.location.assign('/homepage');
+    window.location.assign(frontEndUrl);
   });
 });
 
